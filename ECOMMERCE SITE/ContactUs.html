@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact us</title>
+	<link rel="stylesheet" type="text/css" href="contact.css">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+</head>
+<body>
+	<form action="index.html" class="login__registre" id="login-in">
+	<div class="container">
+		<div class="contact-box">
+			<div class="left"></div>
+			<div class="right">
+				<h2>Contact Us<br> Let Us Know What You Think</h2>
+				<input type="text" class="field" id = name placeholder="Your Name">
+				<input type="email" class="field" id = email placeholder="Your Email">
+				<input type="number" class="field" id = phone placeholder="Phone">
+				<input type = "text" placeholder="Message" id = message class="field">
+				<input class="button" type ="Submit" value="submit" placeholder ="Submit"
+				onclick="send()">
+			
+			</div>
+		</div>
+	</div>
+</form>
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js"></script> 
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAsoQt8QouNyGYH-sJFXmyNRXKBvlc6KPM",
+    authDomain: "contactus-f7937.firebaseapp.com",
+	projectId: "contactus-f7937",
+	databaseURL:"https://contactus-f7937-default-rtdb.firebaseio.com/",
+    storageBucket: "contactus-f7937.appspot.com",
+    messagingSenderId: "523644807640",
+    appId: "1:523644807640:web:6de20b45559bfcc3742aad"
+  };
+  // Initialize Firebase
+  	firebase.initializeApp(firebaseConfig);
+    var database = firebase.database(); 
+	</script>
+	<script src = "Contac.js"></script>
+	
+    </body>
+    </html>

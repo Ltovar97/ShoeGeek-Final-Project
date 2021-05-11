@@ -1,0 +1,94 @@
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- ===== CSS ===== -->
+        <link rel="stylesheet" href="style.css">
+    
+        <!-- ===== BOX ICONS ===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>Login Page Shoe Geek</title>
+    </head>
+    <body>
+        <div class="login">
+            <div class="login__content">
+                <div class="login__img">
+                    <img src="pexels-melvin-buezo-2529157.jpg" alt="">
+                </div>
+
+                <div class="login__forms">
+                    <form action="index.html" class="login__registre" id="login-in">
+                        <h1 class="login__title">Login</h1>
+
+                        <div class="login__box">
+                            <i class='bx bx-user login__icon'></i>
+                            <input type="email" placeholder="email" class="login__input" id="email"  >
+                        </div>    
+                        <div class="login__box">
+                            <i class='bx bx-user login__icon'></i>
+                            <input type="text" placeholder="username" class="login__input" id = "username" >
+                        </div>
+    
+                        <div class="login__box">
+                            <i class='bx bx-lock-alt login__icon'></i>
+                            <input type="password" placeholder="password" class="login__input" id = "password">
+                        </div>
+
+                        <a href="Createaccount.html" class="login__forgot">Create Account ?</a>
+
+                    
+
+                        <input class="button" type ="Submit" value="submit" placeholder ="Login"
+                        onclick="send()">
+
+                        <div>
+                            <span  href="" class="login__account">Forgot Password ?</span>
+                            <span class="login__signin" id="sign-up">Sign Up</span>
+                        </div>
+                    </form>
+                    
+
+            
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js"></script>         
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"> </script>
+    
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+    https://firebase.google.com/docs/web/setup#available-libraries -->
+    
+    <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+    apiKey: "AIzaSyBFH1ngJeb__IoWkHarkA5lNRG4UA1m9fo",
+    authDomain: "login-dfc95.firebaseapp.com",
+    projectId: "login-dfc95",
+    databaseURL:"https://login-dfc95-default-rtdb.firebaseio.com/",
+    storageBucket: "login-dfc95.appspot.com",
+    messagingSenderId: "27485683953",
+    appId: "1:27485683953:web:987169254eddf9bf056950"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    var database = firebase.database(); 
+    </script>
+    <script src = "login.js"></script>
+    </body>
+    </html>
+    
+
+    </body>
+</html>
+
+
+
+
+
+ 

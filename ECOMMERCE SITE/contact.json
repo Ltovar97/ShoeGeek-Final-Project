@@ -1,0 +1,23 @@
+{ 
+    "userdetails": [{
+        "email": "johndoe@gmail.com",
+        "name": "johndoe",
+        "phone": "1234",
+        "message" : "hello"
+    },
+    
+    {
+        "email": "jjj@gmail.com",
+        "name": "johnsdsdoe",
+        "phone": "1234",
+        "message" : "hello"
+    
+    },
+    {
+        "email": "josdshndoe@gmail.com",
+        "name": "johsdsndoe",
+        "phone": "1234",
+        "message" : "hello"
+    
+    }]
+}
